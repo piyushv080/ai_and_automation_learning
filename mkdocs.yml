@@ -1,0 +1,24 @@
+site_name: AI & Automation Learning
+site_description: Personal notes and projects for learning AI, Python, and automation
+docs_dir: docs
+site_dir: site
+
+nav:
+  - Home: index.md
+  - Python:
+      - Basics: python-basics.md
+      - Project README template: examples/README.md
+  - Automation: automation/index.md
+  - AI: ai/index.md
+
+theme:
+  variant: modern
+  palette:
+    - scheme: slate
+      toggle:
+        icon: lucide/sun
+        name: Switch to light mode
+    - scheme: default
+      toggle:
+        icon: lucide/moon
+        name: Switch to dark mode
