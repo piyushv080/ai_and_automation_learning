@@ -5,10 +5,16 @@ site_dir: site
 
 nav:
   - Home: index.md
+  - Linux: linux-notes.md
   - Python:
       - Basics: python-basics.md
+      - Infrastructure Automation: python-infrastructure-automation.md
       - Project README template: examples/README.md
-  - Automation: automation/index.md
+  - Networking: networking-notes.md
+  - Automation:
+      - Overview: automation/index.md
+      - Ansible, AWX, and Automation Platform: ansible-awx.md
+      - Security and Observability: security-observability.md
   - AI: ai/index.md
 
 theme:
