@@ -2,6 +2,8 @@
 
 This guide builds on [Python Basics](python-basics.md) and focuses on using Python for infrastructure operations, REST APIs, AWX jobs, cloud tasks, and troubleshooting.
 
+The examples follow common learning-lab exercises: system summaries, process inventories, CSV/HTML reports, JSON input, API calls, and error handling. Each example uses generic values and should be adapted to a test environment before operational use.
+
 ## Learning objective
 
 For each topic, aim to explain the concept, write a small program, trace its execution, handle errors, and describe where it fits in an infrastructure workflow.
@@ -111,9 +113,179 @@ print(f"Received {len(servers)} server records")
 
 The tuple passed to `timeout` sets connection and response timeouts. Keep TLS certificate validation enabled. Add pagination, retries with backoff for transient errors, rate-limit handling, and request identifiers when the API requires them. Do not retry non-idempotent operations blindly.
 
+For a read-only health endpoint, wrap network and response parsing errors so the script exits with a useful failure rather than a traceback alone:
+
+```python
+import logging
+import os
+
+import requests
+
+logger = logging.getLogger(__name__)
+
+
+def get_health():
+    url = os.environ.get("SERVICE_HEALTH_URL", "https://api.example.test/health")
+    token = os.environ.get("SERVICE_API_TOKEN")
+    headers = {"Authorization": f"Bearer {token}"} if token else {}
+
+    try:
+        response = requests.get(url, headers=headers, timeout=(3, 10))
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.Timeout as exc:
+        logger.error("Health request timed out")
+        raise RuntimeError("health endpoint timed out") from exc
+    except requests.exceptions.RequestException as exc:
+        logger.error("Health request failed: %s", exc.__class__.__name__)
+        raise RuntimeError("could not query health endpoint") from exc
+    except ValueError as exc:
+        logger.error("Health endpoint returned invalid JSON")
+        raise RuntimeError("invalid health response") from exc
+```
+
+Set endpoint values and credentials in the runtime environment or an approved secret store. Do not log the URL if it contains sensitive query parameters, and never print the token.
+
+## System information report
+
+The lab includes system-summary exercises. Python's standard library can report basic runtime and operating-system details; the optional `psutil` package adds CPU, memory, disk, and process metrics.
+
+```python
+import os
+import platform
+
+
+def basic_system_summary():
+    details = platform.uname()
+    return {
+        "system": details.system,
+        "release": details.release,
+        "architecture": details.machine,
+        "logical_cpu_count": os.cpu_count(),
+    }
+
+
+if __name__ == "__main__":
+    for key, value in basic_system_summary().items():
+        print(f"{key}: {value}")
+```
+
+For optional metrics, install `psutil` in the project's virtual environment:
+
+```bash
+python -m pip install psutil
+```
+
+```python
+import psutil
+
+memory = psutil.virtual_memory()
+print(f"Available memory: {memory.available} bytes")
+print(f"Memory used: {memory.percent}%")
+```
+
+Treat system reports as potentially sensitive: they can reveal hostnames, usernames, process names, mount paths, and software versions. Keep reports local unless sharing is approved, and remove fields that the recipient does not need.
+
+## Exporting a process inventory to CSV
+
+`psutil.process_iter` safely iterates over processes, but permissions and process lifetimes can change while the report is being collected. Handle those cases and write only fields needed for the task.
+
+```python
+import csv
+from pathlib import Path
+
+import psutil
+
+
+def export_processes(destination):
+    output_path = Path(destination)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    rows = []
+
+    for process in psutil.process_iter(attrs=["pid", "name", "memory_percent"]):
+        try:
+            info = process.info
+        except (psutil.NoSuchProcess, psutil.AccessDenied):
+            continue
+
+        rows.append({
+            "pid": info.get("pid"),
+            "name": info.get("name") or "unknown",
+            "memory_percent": round(info.get("memory_percent") or 0, 2),
+        })
+
+    with output_path.open("w", newline="", encoding="utf-8") as file:
+        writer = csv.DictWriter(
+            file,
+            fieldnames=["pid", "name", "memory_percent"],
+        )
+        writer.writeheader()
+        writer.writerows(rows)
+
+    return len(rows)
+
+
+if __name__ == "__main__":
+    count = export_processes(Path.home() / "reports" / "process-inventory.csv")
+    print(f"Wrote {count} process records")
+```
+
+This report is read-only, but process names can still expose private activity. Review and sanitize reports before sharing them.
+
+## Build a small HTML report
+
+If a report needs to be viewed in a browser, escape dynamic values before inserting them into HTML. For more complex reports, use a maintained template library rather than concatenating large HTML strings.
+
+```python
+from html import escape
+from pathlib import Path
+
+rows = [
+    {"name": "web-01", "status": "healthy"},
+    {"name": "web-02", "status": "unknown"},
+]
+
+table_rows = "\n".join(
+    f"<tr><td>{escape(str(row['name']))}</td>"
+    f"<td>{escape(str(row['status']))}</td></tr>"
+    for row in rows
+)
+report_html = (
+    "<!doctype html><html lang='en'><meta charset='utf-8'>"
+    "<title>Sample health report</title><table>"
+    "<thead><tr><th>System</th><th>Status</th></tr></thead>"
+    f"<tbody>{table_rows}</tbody></table></html>"
+)
+
+Path("health-report.html").write_text(report_html, encoding="utf-8")
+```
+
+HTML escaping prevents data values from being interpreted as markup. Do not publish reports containing real host, process, or user information without reviewing and sanitizing them.
+
+## CSV input and data validation
+
+Validate each record before using it. Skip or report bad rows rather than assuming that a file is complete and well-formed.
+
+```python
+import csv
+from pathlib import Path
+
+
+def load_servers(path):
+    servers = []
+    with Path(path).open(newline="", encoding="utf-8") as file:
+        for row_number, row in enumerate(csv.DictReader(file), start=2):
+            name = (row.get("name") or "").strip()
+            environment = (row.get("environment") or "").strip().lower()
+            if not name or environment not in {"dev", "test", "prod"}:
+                raise ValueError(f"invalid inventory row {row_number}")
+            servers.append({"name": name, "environment": environment})
+    return servers
+```
+
 ## Infrastructure integrations
 
-### ServiceNow or another request system
+### IT service-management or ticketing system
 
 A typical integration reads an approved request, validates required fields, maps the request to an allowlisted operation, starts a job, tracks its result, verifies the target state, and updates the request with accurate status. Apply authorization and approval checks before changing infrastructure.
 
@@ -163,6 +335,8 @@ When an automation fails, capture the operation, sanitized request context, stat
 4. Add pagination and a bounded retry for temporary failures.
 5. Design a flow that launches an approved AWX job and verifies the result.
 6. Write tests for invalid input, a timeout, and a successful API response.
+7. Create a read-only system summary and mark which fields should be sanitized before sharing.
+8. Export a local process inventory to CSV and handle processes that disappear during collection.
 
 ## Further reading
 

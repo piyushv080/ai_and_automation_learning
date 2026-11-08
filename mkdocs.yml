@@ -36,23 +36,25 @@ theme:
   variant: modern
   features:
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.path
     - navigation.top
+    - navigation.footer
     - content.code.copy
     - toc.follow
+  icon:
+    logo: material/book-open-page-variant
   palette:
     - scheme: slate
-      primary: teal
-      accent: light green
+      primary: blue grey
+      accent: light blue
       toggle:
         icon: lucide/sun
         name: Switch to light mode
     - scheme: default
-      primary: teal
-      accent: deep orange
+      primary: blue
+      accent: indigo
       toggle:
         icon: lucide/moon
         name: Switch to dark mode
@@ -60,6 +62,9 @@ theme:
 markdown_extensions:
   - attr_list
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:zensical.extensions.emoji.twemoji
+      emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
 
 extra_css:
   - stylesheets/extra.css

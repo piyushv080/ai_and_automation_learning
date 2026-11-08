@@ -4,7 +4,7 @@ Scripting helps automate small, repeatable tasks and provides building blocks fo
 
 <div class="grid cards" markdown>
 
--   **Python**
+-   :simple-python:{ .topic-icon .topic-icon--python } **Python**
 
     ---
 
@@ -12,7 +12,7 @@ Scripting helps automate small, repeatable tasks and provides building blocks fo
 
     [Python basics](../python-basics.md) · [Infrastructure automation](../python-infrastructure-automation.md)
 
--   **PowerShell**
+-   :simple-powershell:{ .topic-icon .topic-icon--powershell } **PowerShell**
 
     ---
 
@@ -20,7 +20,7 @@ Scripting helps automate small, repeatable tasks and provides building blocks fo
 
     [PowerShell notes](powershell.md)
 
--   **Bash and shell**
+-   :simple-gnubash:{ .topic-icon .topic-icon--bash } **Bash and shell**
 
     ---
 
@@ -28,7 +28,7 @@ Scripting helps automate small, repeatable tasks and provides building blocks fo
 
     [Bash and shell notes](bash.md)
 
--   **JavaScript**
+-   :simple-javascript:{ .topic-icon .topic-icon--javascript } **JavaScript**
 
     ---
 

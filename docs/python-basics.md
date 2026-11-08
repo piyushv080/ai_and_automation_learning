@@ -15,6 +15,8 @@ print(server_name)
 print(type(port))
 ```
 
+Use names that explain the value. Python is dynamically typed, but choosing and validating the expected type still matters. Use `snake_case` for variable and function names and `UPPER_SNAKE_CASE` for constants.
+
 ## Collections
 
 Use a list for an ordered, changeable sequence; a tuple for a fixed sequence; a set for unique values; and a dictionary for named key-value data.
@@ -84,6 +86,19 @@ result = is_healthy(200)
 print(result)
 ```
 
+Functions can accept multiple arguments and defaults. Keep one function focused on one operation so it can be understood and tested independently.
+
+```python
+def format_health_message(server_name, status="unknown"):
+    return f"{server_name}: {status}"
+
+
+print(format_health_message("web-01", "healthy"))
+print(format_health_message("web-02"))
+```
+
+Avoid mutable default arguments such as `items=[]`; use `None` and create a fresh list inside the function instead.
+
 ## Strings
 
 Strings are text. Common methods include `.strip()`, `.lower()`, `.upper()`, `.split()`, and `.replace()`. An f-string inserts values into text:
@@ -125,6 +140,28 @@ with open("server.json", encoding="utf-8") as file:
 print(server["name"])
 ```
 
+Use `pathlib.Path` for portable paths. The CSV module can read and write tabular reports without manually joining values with commas.
+
+```python
+import csv
+from pathlib import Path
+
+report_path = Path("reports") / "server-status.csv"
+report_path.parent.mkdir(parents=True, exist_ok=True)
+
+rows = [
+    {"name": "web-01", "status": "healthy"},
+    {"name": "web-02", "status": "unknown"},
+]
+
+with report_path.open("w", newline="", encoding="utf-8") as file:
+    writer = csv.DictWriter(file, fieldnames=["name", "status"])
+    writer.writeheader()
+    writer.writerows(rows)
+```
+
+Use only sample or approved data in reports. Review generated files before sharing them because logs and inventories can contain identifying system details.
+
 ## Modules and virtual environments
 
 A module is a Python file containing reusable code. A package organizes related modules. A virtual environment keeps one project’s dependencies separate from other Python projects.
@@ -138,11 +175,65 @@ python -m pip install requests
 
 Record project dependencies in `requirements.txt` so the environment can be recreated. Review and pin dependency versions for shared or production projects.
 
+The standard library includes modules for common tasks: `pathlib` for paths, `json` and `csv` for data files, `logging` for operational messages, `argparse` for command-line options, `platform` for operating-system details, and `subprocess` for invoking external programs. Prefer a standard-library solution when it meets the need.
+
+## Command-line input and validation
+
+For a tiny exercise, `input()` is convenient. For reusable scripts, `argparse` provides named options, help text, and type conversion.
+
+```python
+import argparse
+
+parser = argparse.ArgumentParser(description="Summarize a sample inventory")
+parser.add_argument("inventory", help="Path to an input JSON file")
+parser.add_argument("--environment", default="dev")
+args = parser.parse_args()
+
+print(f"Read {args.inventory} for environment {args.environment}")
+```
+
+Validate values before using them in file paths, API calls, or infrastructure operations. Treat external input as untrusted.
+
+## Logging
+
+Use logging instead of relying on `print()` for scripts that need diagnostics. Never include credentials or sensitive response data in log messages.
+
+```python
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(message)s",
+)
+
+logging.info("Starting inventory summary")
+logging.warning("A sample record has no status field")
+```
+
+## Testing a function
+
+Small functions are easier to test than scripts that perform all work at import time. Put executable behavior under a main guard so importing a module does not start an automation job.
+
+```python
+def is_success(status_code):
+    return status_code == 200
+
+
+def main():
+    print(is_success(200))
+
+
+if __name__ == "__main__":
+    main()
+```
+
 ## Practice
 
 1. Create a list of server dictionaries with a name, environment, and health status.
 2. Print only production servers and count them.
 3. Write a function that returns unhealthy servers.
 4. Read a server list from a JSON file and handle a missing key.
+5. Export a filtered sample inventory to CSV.
+6. Add command-line options, logging, and tests for a small validation function.
 
-Next: [Python for Infrastructure Automation](python-infrastructure-automation.md) covers APIs, error handling, logging, AWX and ServiceNow workflows, and testing.
+Next: [Python for Infrastructure Automation](python-infrastructure-automation.md) covers system reports, APIs, job automation, logging, and testing.
