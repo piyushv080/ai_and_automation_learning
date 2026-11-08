@@ -5,26 +5,61 @@ site_dir: site
 
 nav:
   - Home: index.md
-  - Linux: linux-notes.md
-  - Python:
-      - Basics: python-basics.md
-      - Infrastructure Automation: python-infrastructure-automation.md
-      - Project README template: examples/README.md
-  - Networking: networking-notes.md
-  - Automation:
-      - Overview: automation/index.md
+  - Scripting:
+      - scripting/index.md
+      - Python:
+          - Basics: python-basics.md
+          - Infrastructure Automation: python-infrastructure-automation.md
+      - PowerShell: scripting/powershell.md
+      - Bash and Shell: scripting/bash.md
+      - JavaScript: scripting/javascript.md
+  - Cloud Infrastructure:
+      - cloud/index.md
+      - Linux Foundations: linux-notes.md
+      - Networking Foundations: networking-notes.md
+  - Automation Technologies:
+      - automation/index.md
       - Ansible, AWX, and Automation Platform: ansible-awx.md
+      - Terraform Foundations: automation/terraform.md
+  - DevOps Engineering:
+      - devops/index.md
       - Security and Observability: security-observability.md
+  - Projects:
+      - projects/index.md
+  - Documentation:
+      - documentation/index.md
+      - Project README Template: examples/README.md
+      - Runbook Template: documentation/runbook-template.md
   - AI: ai/index.md
 
 theme:
   variant: modern
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - content.code.copy
+    - toc.follow
   palette:
     - scheme: slate
+      primary: teal
+      accent: light green
       toggle:
         icon: lucide/sun
         name: Switch to light mode
     - scheme: default
+      primary: teal
+      accent: deep orange
       toggle:
         icon: lucide/moon
         name: Switch to dark mode
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css

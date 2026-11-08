@@ -1,0 +1,99 @@
+:root {
+  --learning-radius: 1rem;
+}
+
+.md-grid {
+  max-width: 1480px;
+}
+
+.md-header {
+  box-shadow: 0 1px 0 rgb(127 127 127 / 14%);
+}
+
+.md-tabs {
+  border-bottom: 1px solid rgb(127 127 127 / 14%);
+}
+
+.learning-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin: 0 0 2rem;
+  padding: clamp(2rem, 6vw, 4.5rem);
+  border: 1px solid rgb(45 212 191 / 24%);
+  border-radius: calc(var(--learning-radius) + .5rem);
+  background:
+    radial-gradient(ellipse at 85% 0%, rgb(45 212 191 / 20%), transparent 48%),
+    linear-gradient(135deg, rgb(13 148 136 / 13%), rgb(59 130 246 / 8%));
+}
+
+.learning-hero::after {
+  position: absolute;
+  z-index: -1;
+  right: -4rem;
+  bottom: -7rem;
+  width: 18rem;
+  height: 18rem;
+  border: 1px solid rgb(45 212 191 / 20%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2rem rgb(45 212 191 / 3%), 0 0 0 4rem rgb(45 212 191 / 3%);
+  content: "";
+}
+
+.learning-hero h1 {
+  max-width: 15ch;
+  margin-bottom: .75rem;
+  font-size: clamp(2.3rem, 6vw, 4.1rem);
+  line-height: 1.06;
+  letter-spacing: -.045em;
+}
+
+.learning-hero p {
+  max-width: 62ch;
+  font-size: 1.1rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.learning-hero .md-button {
+  margin: .8rem .5rem 0 0;
+  border-radius: .65rem;
+}
+
+.grid.cards > ul > li,
+.grid.cards > ol > li {
+  border-radius: var(--learning-radius);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.grid.cards > ul > li:hover,
+.grid.cards > ol > li:hover {
+  transform: translateY(-3px);
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 .5rem 1.5rem rgb(0 0 0 / 10%);
+}
+
+.md-typeset h2 {
+  margin-top: 2.3rem;
+  letter-spacing: -.02em;
+}
+
+.md-typeset table:not([class]) th {
+  font-weight: 700;
+}
+
+.md-typeset pre {
+  border: 1px solid rgb(127 127 127 / 17%);
+  border-radius: .7rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grid.cards > ul > li,
+  .grid.cards > ol > li {
+    transition: none;
+  }
+
+  .grid.cards > ul > li:hover,
+  .grid.cards > ol > li:hover {
+    transform: none;
+  }
+}
