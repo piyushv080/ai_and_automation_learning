@@ -4,7 +4,7 @@ Automation turns repeatable operational work into controlled, reviewable workflo
 
 <div class="grid cards" markdown>
 
--   **Ansible, AWX, and AAP**
+-   :material-robot:{ .lg .middle } **Ansible, AWX, and AAP**
 
     ---
 
@@ -12,7 +12,7 @@ Automation turns repeatable operational work into controlled, reviewable workflo
 
     [Open the Ansible guide](../ansible-awx.md)
 
--   **Terraform and infrastructure as code**
+-   :material-cloud-cog:{ .lg .middle } **Terraform and infrastructure as code**
 
     ---
 
@@ -20,7 +20,7 @@ Automation turns repeatable operational work into controlled, reviewable workflo
 
     [Open Terraform foundations](terraform.md)
 
--   **Python and APIs**
+-   :material-api:{ .lg .middle } **Python and APIs**
 
     ---
 

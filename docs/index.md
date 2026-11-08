@@ -1,10 +1,17 @@
+---
+hide:
+  - toc
+---
+
 <div class="learning-hero" markdown>
 
-# AI & Automation Learning
+<p class="learning-eyebrow">A practical learning library</p>
 
-Build practical skills in scripting, cloud infrastructure, automation, and DevOps through focused notes and hands-on projects.
+# Build skills. Ship automation.
 
-[Explore the catalog](#learning-catalog){ .md-button .md-button--primary }
+Learn scripting, cloud infrastructure, AI, automation, and DevOps through focused guides and hands-on projects.
+
+[Explore learning paths](#learning-catalog){ .md-button .md-button--primary }
 [Browse project ideas](projects/index.md){ .md-button }
 
 </div>
@@ -15,7 +22,7 @@ Choose a topic to explore. Each section combines concepts, examples, and project
 
 <div class="grid cards" markdown>
 
--   **⌨️ Scripting**
+-   :material-code-braces:{ .topic-icon .topic-icon--scripting } **Scripting**
 
     ---
 
@@ -23,7 +30,7 @@ Choose a topic to explore. Each section combines concepts, examples, and project
 
     [Explore scripting](scripting/index.md)
 
--   **☁️ Cloud Infrastructure**
+-   :material-cloud-outline:{ .topic-icon .topic-icon--cloud } **Cloud Infrastructure**
 
     ---
 
@@ -31,7 +38,7 @@ Choose a topic to explore. Each section combines concepts, examples, and project
 
     [Explore cloud infrastructure](cloud/index.md)
 
--   **⚙️ Automation Technologies**
+-   :material-cog-sync:{ .topic-icon .topic-icon--automation } **Automation Technologies**
 
     ---
 
@@ -39,7 +46,7 @@ Choose a topic to explore. Each section combines concepts, examples, and project
 
     [Explore automation](automation/index.md)
 
--   **🚀 DevOps Engineering**
+-   :material-rocket-launch:{ .topic-icon .topic-icon--devops } **DevOps Engineering**
 
     ---
 
@@ -47,7 +54,7 @@ Choose a topic to explore. Each section combines concepts, examples, and project
 
     [Explore DevOps](devops/index.md)
 
--   **🧪 Project Ideas**
+-   :material-lightbulb-on-outline:{ .topic-icon .topic-icon--projects } **Project Ideas**
 
     ---
 
@@ -55,7 +62,7 @@ Choose a topic to explore. Each section combines concepts, examples, and project
 
     [Choose a project](projects/index.md)
 
--   **📚 Documentation**
+-   :material-book-open-variant:{ .topic-icon .topic-icon--docs } **Documentation**
 
     ---
 
