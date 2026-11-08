@@ -6,16 +6,16 @@ A practical reference for everyday shell work, system administration, and troubl
 
 ## Contents
 
-- [Shell and files](#shell-and-files)
-- [Permissions and ownership](#permissions-and-ownership)
-- [Processes and services](#processes-and-services)
-- [CPU and memory checks](#cpu-and-memory-checks)
-- [Disks and filesystems](#disks-and-filesystems)
-- [Networking](#networking)
-- [Logs and scheduled work](#logs-and-scheduled-work)
-- [Boot and directory layout](#boot-and-directory-layout)
-- [Troubleshooting scenarios](#troubleshooting-scenarios)
-- [Further reading](#further-reading)
+- [Shell and files](#1-shell-and-files)
+- [Permissions and ownership](#2-permissions-and-ownership)
+- [Processes and services](#3-processes-and-services)
+- [CPU and memory checks](#4-cpu-and-memory-checks)
+- [Disks and filesystems](#5-disks-and-filesystems)
+- [Networking](#6-networking)
+- [Logs and scheduled work](#7-logs-and-scheduled-work)
+- [Boot and directory layout](#8-boot-and-directory-layout)
+- [Troubleshooting scenarios](#9-troubleshooting-scenarios)
+- [Further reading](#10-further-reading)
 
 ## 1. Shell and files
 
