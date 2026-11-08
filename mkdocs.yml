@@ -5,6 +5,7 @@ site_dir: site
 
 nav:
   - Home: index.md
+  - Linux: linux-notes.md
   - Python:
       - Basics: python-basics.md
       - Project README template: examples/README.md
