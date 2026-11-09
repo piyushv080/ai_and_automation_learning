@@ -1,10 +1,11 @@
 site_name: Automation & Platform Engineering
-site_description: Personal notes and projects for learning automation, scripting, cloud, and platform engineering
+site_description: Practical learning resources for scripting, AI automation, cloud infrastructure, DevOps, and platform engineering.
 docs_dir: docs
 site_dir: site
 
 nav:
   - Home: index.md
+
   - Scripting:
       - Scripting: scripting/scripting.md
       - Python:
@@ -13,23 +14,28 @@ nav:
           - Practice Programs: scripting/python-programs.md
       - PowerShell: scripting/powershell.md
       - Bash and Shell: scripting/bash.md
+
   - DevOps & Infrastructure as Code:
       - DevOps & Infrastructure as Code: devops/devops-engineering.md
       - Operating System & Networking:
           - Overview: devops/os-networking.md
           - Linux Foundations: devops/cloud/linux-notes.md
           - Networking Foundations: devops/cloud/networking-notes.md
+
       - Git SCM:
           - Overview: devops/git-scm.md
           - Git Guide: devops/git-guide.md
+
       - Infrastructure as Code:
           - Overview: devops/infrastructure-as-code.md
           - Cloud Infrastructure: devops/cloud/cloud-infrastructure.md
           - Terraform Foundations: devops/automation/terraform.md
+
       - Containers & Orchestration:
           - Overview: devops/containers-orchestration.md
           - Docker Commands Cheat Sheet: devops/docker-guide.md
           - Kubernetes Guide: devops/kubernetes-guide.md
+
       - Automation Technologies:
           - Overview: devops/automation/automation-technologies.md
           - Ansible, AWX, and Automation Platform: devops/automation/ansible-awx.md
@@ -37,16 +43,12 @@ nav:
           - Ansible Best Practices: devops/automation/ansible-best-practices.md
           - AWX Ansible Setup: devops/automation/install-awx-ansible.md
           - Ansible Guide: devops/ansible-guide.md
+
       - Observability & Security:
           - Overview: devops/observability-security.md
           - Prometheus and Grafana Guide: devops/prometheus-grafana-guide.md
           - Security and Observability: devops/security-observability.md
-  - Projects:
-      - Project Ideas: projects/project-ideas.md
-  - Documentation:
-      - Documentation: documentation/documentation.md
-      - Project README Template: documentation/project-readme-template.md
-      - Runbook Template: documentation/runbook-template.md
+
   - ServiceNow:
       - JavaScript on the Now Platform: ServiceNow/javascript-1.md
       - Glide APIs: ServiceNow/glide-apis.md
@@ -65,8 +67,10 @@ theme:
     - navigation.footer
     - content.code.copy
     - toc.follow
+
   icon:
     logo: material/book-open-page-variant
+
   palette:
     - scheme: slate
       primary: blue grey
@@ -74,6 +78,7 @@ theme:
       toggle:
         icon: lucide/sun
         name: Switch to light mode
+
     - scheme: default
       primary: blue
       accent: indigo
