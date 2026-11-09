@@ -25,12 +25,12 @@ Good documentation helps someone understand, operate, and safely change a system
 
 ## Templates
 
-- [Project README template](../examples/README.md)
+- [Project README template](project-readme-template.md)
 - [Runbook template](runbook-template.md)
 
 ## Existing learning notes
 
-- [Linux administration](../linux-notes.md)
-- [Networking](../networking-notes.md)
-- [Python basics](../python-basics.md)
-- [Ansible, AWX, and Automation Platform](../ansible-awx.md)
+- [Linux administration](../devops/cloud/linux-notes.md)
+- [Networking](../devops/cloud/networking-notes.md)
+- [Python basic](../scripting/python-basic.md)
+- [Ansible, AWX, and Automation Platform](../devops/automation/ansible-awx.md)

@@ -10,7 +10,7 @@ Scripting helps automate small, repeatable tasks and provides building blocks fo
 
     General-purpose scripting, APIs, data processing, and infrastructure integrations.
 
-    [Python basics](../python-basics.md) · [Infrastructure automation](../python-infrastructure-automation.md)
+    [Python basic](python-basic.md) · [Python advanced](python-advanced.md)
 
 -   :simple-powershell:{ .topic-icon .topic-icon--powershell } **PowerShell**
 
@@ -28,14 +28,6 @@ Scripting helps automate small, repeatable tasks and provides building blocks fo
 
     [Bash and shell notes](bash.md)
 
--   :simple-javascript:{ .topic-icon .topic-icon--javascript } **JavaScript**
-
-    ---
-
-    Browser scripting, Node.js tools, and JSON-based APIs.
-
-    [JavaScript notes](javascript.md)
-
 </div>
 
 ## Choosing a language
@@ -45,6 +37,5 @@ Scripting helps automate small, repeatable tasks and provides building blocks fo
 | Python | APIs, structured data, cross-platform automation | Read a JSON inventory and report unhealthy systems. |
 | PowerShell | Windows systems and Microsoft administration | Collect service status and export a CSV report. |
 | Bash | Linux command-line tasks and glue scripts | Check disk usage and produce a concise status report. |
-| JavaScript | Web tasks, Node.js utilities, and API clients | Call a test endpoint and display the JSON result. |
 
 Keep scripts small, validate their inputs, avoid embedding credentials, handle failures clearly, and test against non-production data first.

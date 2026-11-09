@@ -1,6 +1,6 @@
 # Automation Technologies
 
-Automation turns repeatable operational work into controlled, reviewable workflows. This section covers configuration management, infrastructure as code, and API-driven automation.
+Automation turns repeatable operational work into controlled, reviewable workflows. This section covers configuration management and API-driven automation.
 
 <div class="grid cards" markdown>
 
@@ -10,15 +10,23 @@ Automation turns repeatable operational work into controlled, reviewable workflo
 
     Learn inventories, playbooks, roles, execution environments, job templates, and safe job workflows.
 
-    [Open the Ansible guide](../ansible-awx.md)
+    [Open the Ansible guide](ansible-awx.md)
 
--   :material-cloud-cog:{ .lg .middle } **Terraform and infrastructure as code**
+-   :material-book-cog:{ .lg .middle } **Ansible automation notes**
 
     ---
 
-    Learn how providers, resources, plans, state, and modules fit together.
+    Practice YAML, playbooks, facts, roles, AWS VPC provisioning, and ServiceNow ITSM integration.
 
-    [Open Terraform foundations](terraform.md)
+    [Open Ansible automation notes](ansible_automation.md)
+
+-   :material-shield-check:{ .lg .middle } **Ansible best practices**
+
+    ---
+
+    Apply safe inventory, secret, idempotency, cloud, ITSM, and AWX practices.
+
+    [Open Ansible best practices](ansible-best-practices.md)
 
 -   :material-api:{ .lg .middle } **Python and APIs**
 
@@ -26,9 +34,11 @@ Automation turns repeatable operational work into controlled, reviewable workflo
 
     Connect approved APIs to automation with validation, timeouts, error handling, and verification.
 
-    [Open the Python automation guide](../python-infrastructure-automation.md)
+    [Open the Python automation guide](../../scripting/python-advanced.md)
 
 </div>
+
+For Terraform and infrastructure as code, see [DevOps & Infrastructure as Code](../devops-engineering.md).
 
 ## A reliable automation workflow
 

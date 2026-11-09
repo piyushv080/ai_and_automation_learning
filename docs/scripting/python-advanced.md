@@ -1,58 +1,12 @@
-# Python for Infrastructure Automation
+# Python Advanced
 
-This guide builds on [Python Basics](python-basics.md) and focuses on using Python for infrastructure operations, REST APIs, AWX jobs, cloud tasks, and troubleshooting.
+This page builds on [Python Basic](python-basic.md) and focuses on using Python for infrastructure operations, REST APIs, AWX jobs, cloud tasks, and troubleshooting.
 
 The examples follow common learning-lab exercises: system summaries, process inventories, CSV/HTML reports, JSON input, API calls, and error handling. Each example uses generic values and should be adapted to a test environment before operational use.
 
-## Learning objective
-
 For each topic, aim to explain the concept, write a small program, trace its execution, handle errors, and describe where it fits in an infrastructure workflow.
 
-## Core Python concepts
-
-### Variables and data types
-
-Variables are names that refer to values. Common types include `str`, `int`, `float`, `bool`, `list`, `tuple`, `set`, `dict`, and `None`.
-
-```python
-server = {
-    "name": "web-01",
-    "ip": "192.0.2.10",
-    "environment": "dev",
-    "port": 8080,
-    "healthy": True,
-}
-
-print(server["name"])
-print(type(server["port"]))
-print(server.get("owner", "unassigned"))
-```
-
-Lists and dictionaries are mutable. Strings, integers, and tuples are immutable. Use a dictionary when values have named fields; use a list for an ordered collection; use a set when uniqueness matters.
-
-### Conditions, loops, and functions
-
-```python
-servers = [
-    {"name": "web-01", "environment": "prod", "healthy": True},
-    {"name": "web-02", "environment": "dev", "healthy": False},
-]
-
-def unhealthy_production_hosts(items):
-    return [
-        item["name"]
-        for item in items
-        if item.get("environment") == "prod" and not item.get("healthy", False)
-    ]
-
-print(unhealthy_production_hosts(servers))
-```
-
-Use `for` when iterating over a collection. Use `while` when repetition depends on a condition, and ensure the condition can eventually become false. `break` exits a loop, `continue` skips to its next iteration, and `pass` is a placeholder statement.
-
-Functions package reusable work. A **parameter** is named in a function definition; an **argument** is passed when calling it. `return` sends a value back to the caller; `print()` writes text for a person to read.
-
-### Exceptions and validation
+## Advanced error handling and validation
 
 Catch errors that you can handle. Avoid a bare `except`, which can hide programming errors and interrupts.
 
@@ -344,3 +298,7 @@ When an automation fails, capture the operation, sanitized request context, stat
 - [Python `venv` documentation](https://docs.python.org/3/library/venv.html)
 - [Requests documentation](https://requests.readthedocs.io/)
 - [Ansible Automation Platform documentation](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/)
+
+Previous: start with [Python Basic](python-basic.md) for core syntax and data structures.
+
+Next: try the [Python practice programs](python-programs.md) for hands-on number, string, pattern, array, and matrix exercises.

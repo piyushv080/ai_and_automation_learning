@@ -25,6 +25,8 @@ Monitoring agents and instrumentation can collect application performance data, 
 
 Dashboards in tools such as New Relic and Grafana should answer a specific operational question. Prefer a small set of actionable signals, clear units and time ranges, service ownership, and links to relevant logs or runbooks. A dashboard is not a substitute for alert thresholds and an incident response process.
 
+For a hands-on metrics lab, see the [Prometheus and Grafana guide](prometheus-grafana-guide.md).
+
 ## SLI, SLO, and SLA
 
 - **Service Level Indicator (SLI):** a measured value describing service behavior, such as request success rate or latency.
