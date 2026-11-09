@@ -1,35 +1,44 @@
 # Automation & Platform Engineering
 
-A static learning catalog built from Markdown with Zensical and published on GitHub Pages. Learning areas include scripting, cloud infrastructure, automation technologies, DevOps engineering, projects, and documentation. Add topic pages under `docs/` and include them in `mkdocs.yml` navigation.
+A comprehensive learning catalog covering scripting, AI and intelligent automation, cloud infrastructure, DevOps engineering, platform engineering, and enterprise technologies. Built using Markdown and Zensical, and published on GitHub Pages.
 
-## Preview locally
+The documentation includes technical concepts, practical examples, automation technologies, hands-on projects, implementation guides, and engineering best practices across multiple learning areas.
 
-From this folder (the repository root), create and activate a virtual environment.
+## Learning Areas
 
-### Linux / WSL
+- Scripting and Programming – Python, PowerShell, and Bash.
+- AI and Intelligent Automation – AI fundamentals, LLMs, AI agents, and workflow automation.
+- Cloud Infrastructure – Cloud platforms, architecture, and infrastructure management.
+- Automation Technologies – Ansible, Terraform, and configuration management.
+- DevOps Engineering – Git, GitHub Actions, CI/CD, and deployment automation.
+- Platform Engineering – Kubernetes, containers, and platform concepts.
+- Enterprise Technologies – ServiceNow, ITSM, integrations, and enterprise automation.
+- Projects and Practical Labs – Hands-on exercises, implementation examples, and real-world scenarios.
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-zensical serve
-```
+## Documentation Platform
 
-### Windows PowerShell
+The learning catalog is built with:
 
-```powershell
-py -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-zensical serve
-```
+- **Documentation:** Markdown
+- **Static Site Generator:** Zensical
+- **Version Control:** Git and GitHub
+- **CI/CD:** GitHub Actions
+- **Hosting:** GitHub Pages
 
-Open the local URL printed by Zensical (usually `http://127.0.0.1:8000`).
+## Live Documentation
 
-If you move or rename this repository after creating `.venv`, recreate the environment because virtual environments store their original path. On Linux/WSL, run `deactivate` if needed, then `python3 -m venv --clear .venv`, `source .venv/bin/activate`, and reinstall the requirements.
+Explore the learning resources and technical documentation:
+
+[Automation & Platform Engineering](https://piyushv080.github.io/ai_and_automation_learning/)
 
 ## Publish on GitHub Pages
 
-The workflow is in `.github/workflows/pages.yml`. Push to `dev`, `main`, or `master` to build and publish this site, or start it manually from the **Actions** tab. In the GitHub repository, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**.
+The deployment workflow is available in `.github/workflows/pages.yml`. Pushes to `dev`, `main`, or `master` trigger the documentation build and deployment. The workflow can also be started manually from the **Actions** tab.
 
-The workflow publishes the website at the repository's GitHub Pages URL. The sample pages are in `docs/`; add Markdown files there and include them in the navigation in `mkdocs.yml`.
+GitHub Pages uses **GitHub Actions** as the build and deployment source. The published website is available at the repository's GitHub Pages URL.
+
+## Continuous Learning
+
+This learning catalog evolves continuously with new technologies, automation solutions, technical documentation, practical examples, and engineering projects.
+
+**Learn → Explore → Experiment → Automate → Build**
