@@ -15,7 +15,7 @@ Cloud infrastructure provides on-demand compute, networking, storage, identity, 
 
 ## A practical learning sequence
 
-1. Review [Linux foundations](../linux-notes.md) and [networking foundations](../networking-notes.md).
+1. Review [Linux foundations](linux-notes.md) and [networking foundations](networking-notes.md).
 2. Learn identity, regions/zones, virtual networks, compute, and storage in one cloud provider.
 3. Deploy a small non-production workload with monitoring and a clear teardown plan.
 4. Rebuild it using infrastructure as code and source control.

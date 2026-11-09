@@ -15,7 +15,7 @@ df -h                            # filesystem capacity
 ps -eo pid,comm,%cpu,%mem --sort=-%cpu | head
 ```
 
-See [Linux Administration Notes](../linux-notes.md) for more command examples and troubleshooting workflows.
+See [Linux Administration Notes](../devops/cloud/linux-notes.md) for more command examples and troubleshooting workflows.
 
 The pipe (`|`) passes one command's standard output to the next command. Redirect with `>` to replace a file, `>>` to append, and `2>` to redirect error output. Check exit status with `$?`, or use `if command; then ...; fi` when the outcome controls the next step.
 
@@ -163,7 +163,7 @@ log_error() { printf '%s ERROR %s\n' "$(date '+%Y-%m-%dT%H:%M:%S%z')" "$*" >&2; 
 log_info "Starting read-only report"
 ```
 
-Cron and systemd timers are common scheduling options on Linux. See [Linux Administration Notes](../linux-notes.md#7-logs-and-scheduled-work) for cron basics.
+Cron and systemd timers are common scheduling options on Linux. See [Linux Administration Notes](../devops/cloud/linux-notes.md#7-logs-and-scheduled-work) for cron basics.
 
 ## 9. Linting and debugging
 

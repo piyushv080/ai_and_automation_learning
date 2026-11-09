@@ -1,36 +1,58 @@
-site_name: AI & Automation Learning
-site_description: Personal notes and projects for learning AI, Python, and automation
+site_name: Automation & Platform Engineering
+site_description: Personal notes and projects for learning automation, scripting, cloud, and platform engineering
 docs_dir: docs
 site_dir: site
 
 nav:
   - Home: index.md
   - Scripting:
-      - scripting/index.md
+      - Scripting: scripting/scripting.md
       - Python:
-          - Basics: python-basics.md
-          - Infrastructure Automation: python-infrastructure-automation.md
+          - Python Basic: scripting/python-basic.md
+          - Python Advanced: scripting/python-advanced.md
+          - Practice Programs: scripting/python-programs.md
       - PowerShell: scripting/powershell.md
       - Bash and Shell: scripting/bash.md
-      - JavaScript: scripting/javascript.md
-  - Cloud Infrastructure:
-      - cloud/index.md
-      - Linux Foundations: linux-notes.md
-      - Networking Foundations: networking-notes.md
-  - Automation Technologies:
-      - automation/index.md
-      - Ansible, AWX, and Automation Platform: ansible-awx.md
-      - Terraform Foundations: automation/terraform.md
-  - DevOps Engineering:
-      - devops/index.md
-      - Security and Observability: security-observability.md
+  - DevOps & Infrastructure as Code:
+      - DevOps & Infrastructure as Code: devops/devops-engineering.md
+      - Operating System & Networking:
+          - Overview: devops/os-networking.md
+          - Linux Foundations: devops/cloud/linux-notes.md
+          - Networking Foundations: devops/cloud/networking-notes.md
+      - Git SCM:
+          - Overview: devops/git-scm.md
+          - Git Guide: devops/git-guide.md
+      - Infrastructure as Code:
+          - Overview: devops/infrastructure-as-code.md
+          - Cloud Infrastructure: devops/cloud/cloud-infrastructure.md
+          - Terraform Foundations: devops/automation/terraform.md
+      - Containers & Orchestration:
+          - Overview: devops/containers-orchestration.md
+          - Docker Commands Cheat Sheet: devops/docker-guide.md
+          - Kubernetes Guide: devops/kubernetes-guide.md
+      - Automation Technologies:
+          - Overview: devops/automation/automation-technologies.md
+          - Ansible, AWX, and Automation Platform: devops/automation/ansible-awx.md
+          - Ansible Automation Notes: devops/automation/ansible_automation.md
+          - Ansible Best Practices: devops/automation/ansible-best-practices.md
+          - AWX Ansible Setup: devops/automation/install-awx-ansible.md
+          - Ansible Guide: devops/ansible-guide.md
+      - Observability & Security:
+          - Overview: devops/observability-security.md
+          - Prometheus and Grafana Guide: devops/prometheus-grafana-guide.md
+          - Security and Observability: devops/security-observability.md
   - Projects:
-      - projects/index.md
+      - Project Ideas: projects/project-ideas.md
   - Documentation:
-      - documentation/index.md
-      - Project README Template: examples/README.md
+      - Documentation: documentation/documentation.md
+      - Project README Template: documentation/project-readme-template.md
       - Runbook Template: documentation/runbook-template.md
-  - AI: ai/index.md
+  - ServiceNow:
+      - JavaScript on the Now Platform: ServiceNow/javascript-1.md
+      - Glide APIs: ServiceNow/glide-apis.md
+      - Client-Side Scripting: ServiceNow/client-side-scripting.md
+      - Server-Side Scripting: ServiceNow/server-side-scripting.md
+      - Flow Designer and Knowledge Management: ServiceNow/flow-designer-and-knowledge.md
 
 theme:
   variant: modern

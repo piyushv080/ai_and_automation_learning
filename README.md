@@ -1,4 +1,4 @@
-# AI and Automation Learning
+# Automation & Platform Engineering
 
 A static learning catalog built from Markdown with Zensical and published on GitHub Pages. Learning areas include scripting, cloud infrastructure, automation technologies, DevOps engineering, projects, and documentation. Add topic pages under `docs/` and include them in `mkdocs.yml` navigation.
 

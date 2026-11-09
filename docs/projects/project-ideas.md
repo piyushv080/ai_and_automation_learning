@@ -45,4 +45,4 @@ Build a dashboard from sample metrics and write a runbook that explains what to 
 - [ ] Keep credentials out of code and logs.
 - [ ] Add validation, error handling, and tests where appropriate.
 - [ ] Include verification and cleanup or rollback steps.
-- [ ] Explain the design and limitations in a [project README](../examples/README.md).
+- [ ] Explain the design and limitations in a [project README](../documentation/project-readme-template.md).

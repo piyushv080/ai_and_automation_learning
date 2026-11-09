@@ -1,4 +1,4 @@
-# Python Basics
+# Python Basic
 
 Use this page to learn core Python syntax and data structures. The examples use server data so the concepts connect to infrastructure work.
 
@@ -164,12 +164,12 @@ Use only sample or approved data in reports. Review generated files before shari
 
 ## Modules and virtual environments
 
-A module is a Python file containing reusable code. A package organizes related modules. A virtual environment keeps one project’s dependencies separate from other Python projects.
+A module is a Python file containing reusable code. A package organizes related modules. A virtual environment keeps one project's dependencies separate from other Python projects.
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate       # Linux/macOS
-# .venv\\Scripts\\Activate.ps1  # Windows PowerShell
+# .venv\Scripts\Activate.ps1    # Windows PowerShell
 python -m pip install requests
 ```
 
@@ -236,4 +236,4 @@ if __name__ == "__main__":
 5. Export a filtered sample inventory to CSV.
 6. Add command-line options, logging, and tests for a small validation function.
 
-Next: [Python for Infrastructure Automation](python-infrastructure-automation.md) covers system reports, APIs, job automation, logging, and testing.
+Next: continue with [Python Advanced](python-advanced.md) for REST APIs, system reports, integrations, and troubleshooting.
