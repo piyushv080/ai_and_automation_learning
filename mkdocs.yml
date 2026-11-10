@@ -11,6 +11,7 @@ nav:
       - Python:
           - Python Basic: scripting/python-basic.md
           - Python Advanced: scripting/python-advanced.md
+          - Python Library: scripting/python-library.md
           - Practice Programs: scripting/python-programs.md
       - PowerShell: scripting/powershell.md
       - Bash and Shell: scripting/bash.md
