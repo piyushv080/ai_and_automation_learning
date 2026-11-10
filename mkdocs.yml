@@ -26,7 +26,8 @@ nav:
       - Git SCM:
           - Overview: devops/git-scm.md
           - Git Guide: devops/git-guide.md
-
+          - CI/CD with GitHub Actions: devops/cicd_on_github_action.md
+          
       - Infrastructure as Code:
           - Overview: devops/infrastructure-as-code.md
           - Cloud Infrastructure: devops/cloud/cloud-infrastructure.md
