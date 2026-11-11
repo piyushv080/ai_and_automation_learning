@@ -1,18 +1,22 @@
+
 name: 100 Days of Code - Feature Branch Validation
 
 on:
   push:
-    branches: [feature/100-days-of-code]
+    branches:
+      - feature/100-days-of-code
     paths:
       - ".github/scripts/100_days_of_code/**"
       - ".github/workflows/**"
       - "curriculum/**"
-      - "docs/100-days-of-code/**"
-      - "tests/**"
+      - "docs/**"
       - "solutions/**"
+      - "tests/**"
       - "mkdocs.yml"
       - "requirements.txt"
       - "pytest.ini"
+      - "pytest.ini"
+
   workflow_dispatch:
 
 permissions:
@@ -24,24 +28,37 @@ concurrency:
 
 jobs:
   validate:
+    name: Validate Feature Branch
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements.txt
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -s requirements.txt ]; then python -m pip install -r requirements.txt; fi
-          python -m pip install "pytest>=8,<10"
+          python -m pip install -r requirements.txt
+
       - name: Compile automation scripts
-        run: python -m compileall -q .github/scripts/100_days_of_code
+        run: |
+          python -m compileall -q .github/scripts/100_days_of_code
+
       - name: Validate curriculum JSON
-        run: python -m json.tool curriculum/index.json > /dev/null
+        run: |
+          python -m json.tool curriculum/index.json > /dev/null
+
       - name: Run pytest
-        run: python -m pytest
-      - name: Build MkDocs
-        run: python -m mkdocs build --strict
+        run: |
+          python -m pytest -v
+
+      - name: Build Zensical website
+        run: |
+          zensical build --strict
