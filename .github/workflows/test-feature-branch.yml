@@ -2,21 +2,23 @@
 name: Test 100 Days of Code - Feature Branch
 
 on:
+  push:
+    branches:
+      - feature/100-days-of-code
+
   workflow_dispatch:
 
 permissions:
   contents: read
-  issues: write
 
 jobs:
   test-dispatcher:
+    name: Validate Feature Branch
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout selected branch
+      - name: Checkout feature branch
         uses: actions/checkout@v4
-        with:
-          ref: feature/100-days-of-code
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,9 +34,12 @@ jobs:
         run: |
           python -c "
           import json
-          with open('curriculum/index.json') as f:
+
+          with open('curriculum/index.json', encoding='utf-8') as f:
               data = json.load(f)
+
           print('Total challenges:', len(data['challenges']))
+
           for challenge in data['challenges']:
               print(challenge['day'], challenge['title'])
           "
