@@ -60,10 +60,107 @@ nav:
 
   - 100 Days of Code:
       - Overview: 100-days-of-code/index.md
-      - Day 001: 100-days-of-code/challenges/day-001.md
-      - Day 002: 100-days-of-code/challenges/day-002.md
-      - Day 003: 100-days-of-code/challenges/day-003.md
-
+      - Challenges:
+          - 'Day 001 - Server Resource Validation': 100-days-of-code/challenges/day-001.md
+          - 'Day 002 - Server Inventory Processing': 100-days-of-code/challenges/day-002.md
+          - 'Day 003 - API Response Validation': 100-days-of-code/challenges/day-003.md
+          - 'Day 004 - Log File Error Analyzer': 100-days-of-code/challenges/day-004.md
+          - 'Day 005 - Disk Usage Alerting': 100-days-of-code/challenges/day-005.md
+          - 'Day 006 - Configuration File Validator': 100-days-of-code/challenges/day-006.md
+          - 'Day 007 - CSV Server Inventory Report': 100-days-of-code/challenges/day-007.md
+          - 'Day 008 - Backup Age Checker': 100-days-of-code/challenges/day-008.md
+          - 'Day 009 - Port Availability Planner': 100-days-of-code/challenges/day-009.md
+          - 'Day 010 - Environment Variable Checker': 100-days-of-code/challenges/day-010.md
+          - 'Day 011 - JSON Inventory Transformer': 100-days-of-code/challenges/day-011.md
+          - 'Day 012 - Service Health Summary': 100-days-of-code/challenges/day-012.md
+          - 'Day 013 - Deployment Readiness Check': 100-days-of-code/challenges/day-013.md
+          - 'Day 014 - Cloud Tag Compliance': 100-days-of-code/challenges/day-014.md
+          - 'Day 015 - Certificate Expiry Monitor': 100-days-of-code/challenges/day-015.md
+          - 'Day 016 - Network CIDR Inventory': 100-days-of-code/challenges/day-016.md
+          - 'Day 017 - Process Resource Report': 100-days-of-code/challenges/day-017.md
+          - 'Day 018 - Patch Compliance Report': 100-days-of-code/challenges/day-018.md
+          - 'Day 019 - User Access Audit': 100-days-of-code/challenges/day-019.md
+          - 'Day 020 - Incident Timeline Builder': 100-days-of-code/challenges/day-020.md
+          - 'Day 021 - Retry with Exponential Backoff': 100-days-of-code/challenges/day-021.md
+          - 'Day 022 - HTTP Status Classifier': 100-days-of-code/challenges/day-022.md
+          - 'Day 023 - API Pagination Simulator': 100-days-of-code/challenges/day-023.md
+          - 'Day 024 - Rate Limit Calculator': 100-days-of-code/challenges/day-024.md
+          - 'Day 025 - Webhook Payload Validator': 100-days-of-code/challenges/day-025.md
+          - 'Day 026 - Secret Configuration Hygiene': 100-days-of-code/challenges/day-026.md
+          - 'Day 027 - Structured Logging Helper': 100-days-of-code/challenges/day-027.md
+          - 'Day 028 - Log Rotation Planner': 100-days-of-code/challenges/day-028.md
+          - 'Day 029 - Service Dependency Graph': 100-days-of-code/challenges/day-029.md
+          - 'Day 030 - Maintenance Window Planner': 100-days-of-code/challenges/day-030.md
+          - 'Day 031 - Docker Image Metadata Audit': 100-days-of-code/challenges/day-031.md
+          - 'Day 032 - Container Restart Analyzer': 100-days-of-code/challenges/day-032.md
+          - 'Day 033 - Kubernetes Pod Status Report': 100-days-of-code/challenges/day-033.md
+          - 'Day 034 - Kubernetes Resource Requests': 100-days-of-code/challenges/day-034.md
+          - 'Day 035 - Kubernetes Namespace Quota': 100-days-of-code/challenges/day-035.md
+          - 'Day 036 - Helm Values Validator': 100-days-of-code/challenges/day-036.md
+          - 'Day 037 - Terraform Plan Summary': 100-days-of-code/challenges/day-037.md
+          - 'Day 038 - Terraform Variable Validator': 100-days-of-code/challenges/day-038.md
+          - 'Day 039 - Infrastructure Drift Report': 100-days-of-code/challenges/day-039.md
+          - 'Day 040 - Cloud Cost Aggregator': 100-days-of-code/challenges/day-040.md
+          - 'Day 041 - Budget Threshold Alert': 100-days-of-code/challenges/day-041.md
+          - 'Day 042 - Object Storage Lifecycle Audit': 100-days-of-code/challenges/day-042.md
+          - 'Day 043 - Snapshot Retention Planner': 100-days-of-code/challenges/day-043.md
+          - 'Day 044 - IAM Policy Structure Check': 100-days-of-code/challenges/day-044.md
+          - 'Day 045 - Security Group Rule Audit': 100-days-of-code/challenges/day-045.md
+          - 'Day 046 - DNS Record Validator': 100-days-of-code/challenges/day-046.md
+          - 'Day 047 - TLS Configuration Checker': 100-days-of-code/challenges/day-047.md
+          - 'Day 048 - Load Balancer Backend Health': 100-days-of-code/challenges/day-048.md
+          - 'Day 049 - Autoscaling Recommendation': 100-days-of-code/challenges/day-049.md
+          - 'Day 050 - Disaster Recovery Readiness': 100-days-of-code/challenges/day-050.md
+          - 'Day 051 - Python CLI Argument Parser': 100-days-of-code/challenges/day-051.md
+          - 'Day 052 - Reusable Python Package': 100-days-of-code/challenges/day-052.md
+          - 'Day 053 - Typed Data Models': 100-days-of-code/challenges/day-053.md
+          - 'Day 054 - Custom Exception Design': 100-days-of-code/challenges/day-054.md
+          - 'Day 055 - Object-Oriented Server Model': 100-days-of-code/challenges/day-055.md
+          - 'Day 056 - Unit Testing with Pytest': 100-days-of-code/challenges/day-056.md
+          - 'Day 057 - Mocking External Dependencies': 100-days-of-code/challenges/day-057.md
+          - 'Day 058 - Test Coverage and Edge Cases': 100-days-of-code/challenges/day-058.md
+          - 'Day 059 - Python Type Checking': 100-days-of-code/challenges/day-059.md
+          - 'Day 060 - Performance Profiling': 100-days-of-code/challenges/day-060.md
+          - 'Day 061 - Concurrent Health Checks': 100-days-of-code/challenges/day-061.md
+          - 'Day 062 - Async API Polling': 100-days-of-code/challenges/day-062.md
+          - 'Day 063 - Subprocess Automation': 100-days-of-code/challenges/day-063.md
+          - 'Day 064 - Filesystem Cleanup Planner': 100-days-of-code/challenges/day-064.md
+          - 'Day 065 - Archive Log Files': 100-days-of-code/challenges/day-065.md
+          - 'Day 066 - YAML Configuration Loader': 100-days-of-code/challenges/day-066.md
+          - 'Day 067 - SQLite Inventory Store': 100-days-of-code/challenges/day-067.md
+          - 'Day 068 - Inventory Data Migration': 100-days-of-code/challenges/day-068.md
+          - 'Day 069 - REST API Client': 100-days-of-code/challenges/day-069.md
+          - 'Day 070 - API Client Error Handling': 100-days-of-code/challenges/day-070.md
+          - 'Day 071 - Git Repository Report': 100-days-of-code/challenges/day-071.md
+          - 'Day 072 - GitHub Actions Context Parser': 100-days-of-code/challenges/day-072.md
+          - 'Day 073 - CI Test Result Summary': 100-days-of-code/challenges/day-073.md
+          - 'Day 074 - Release Notes Generator': 100-days-of-code/challenges/day-074.md
+          - 'Day 075 - Deployment Manifest Validator': 100-days-of-code/challenges/day-075.md
+          - 'Day 076 - Blue-Green Deployment Planner': 100-days-of-code/challenges/day-076.md
+          - 'Day 077 - Canary Release Analyzer': 100-days-of-code/challenges/day-077.md
+          - 'Day 078 - Rollback Decision Engine': 100-days-of-code/challenges/day-078.md
+          - 'Day 079 - SLA Availability Calculator': 100-days-of-code/challenges/day-079.md
+          - 'Day 080 - SLO Error Budget Tracker': 100-days-of-code/challenges/day-080.md
+          - 'Day 081 - Incident Metrics Dashboard Data': 100-days-of-code/challenges/day-081.md
+          - 'Day 082 - Change Failure Rate Report': 100-days-of-code/challenges/day-082.md
+          - 'Day 083 - Runbook Command Validator': 100-days-of-code/challenges/day-083.md
+          - 'Day 084 - Operational Readiness Checklist': 100-days-of-code/challenges/day-084.md
+          - 'Day 085 - Python Automation Test Harness': 100-days-of-code/challenges/day-085.md
+          - 'Day 086 - Workflow YAML Linter': 100-days-of-code/challenges/day-086.md
+          - 'Day 087 - Least Privilege Workflow Audit': 100-days-of-code/challenges/day-087.md
+          - 'Day 088 - Dependency Update Report': 100-days-of-code/challenges/day-088.md
+          - 'Day 089 - Software Bill of Materials Summary': 100-days-of-code/challenges/day-089.md
+          - 'Day 090 - Container Build Context Audit': 100-days-of-code/challenges/day-090.md
+          - 'Day 091 - Cloud Resource Naming Policy': 100-days-of-code/challenges/day-091.md
+          - 'Day 092 - Multi-Environment Config Comparison': 100-days-of-code/challenges/day-092.md
+          - 'Day 093 - Infrastructure Cost Forecast': 100-days-of-code/challenges/day-093.md
+          - 'Day 094 - Automated Backup Verification': 100-days-of-code/challenges/day-094.md
+          - 'Day 095 - Recovery Drill Report': 100-days-of-code/challenges/day-095.md
+          - 'Day 096 - Capstone: Infrastructure Audit CLI': 100-days-of-code/challenges/day-096.md
+          - 'Day 097 - Capstone: CI Quality Gate': 100-days-of-code/challenges/day-097.md
+          - 'Day 098 - Capstone: Deployment Readiness Tool': 100-days-of-code/challenges/day-098.md
+          - 'Day 099 - Capstone: Cloud Operations Toolkit': 100-days-of-code/challenges/day-099.md
+          - 'Day 100 - Capstone: 100 Days Review': 100-days-of-code/challenges/day-100.md
 theme:
   variant: modern
   features:
