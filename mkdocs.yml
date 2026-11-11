@@ -58,6 +58,12 @@ nav:
       - Server-Side Scripting: ServiceNow/server-side-scripting.md
       - Flow Designer and Knowledge Management: ServiceNow/flow-designer-and-knowledge.md
 
+  - 100 Days of Code:
+      - Overview: 100-days-of-code/index.md
+      - Day 001: 100-days-of-code/challenges/day-001.md
+      - Day 002: 100-days-of-code/challenges/day-002.md
+      - Day 003: 100-days-of-code/challenges/day-003.md
+
 theme:
   variant: modern
   features:

@@ -1,0 +1,40 @@
+
+name: 100 Days of Code - Submission Validator
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate-submission:
+    if: >-
+      github.event.issue.pull_request == null &&
+      github.event.comment.body == '/submit'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate submission
+        run: |
+          python .github/scripts/100_days_of_code/submission_validator.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+          COMMENT_USER: ${{ github.event.comment.user.login }}
+          SOLUTION_BRANCH: feature/100-days-of-code

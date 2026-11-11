@@ -1,0 +1,35 @@
+
+name: 100 Days of Code - Progress Report
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - feature/100-days-of-code
+    paths:
+      - ".github/scripts/100_days_of_code/progress_tracker.py"
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  progress:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate progress report
+        run: |
+          python .github/scripts/100_days_of_code/progress_tracker.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
