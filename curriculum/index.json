@@ -1,0 +1,43 @@
+
+{
+  "version": 1,
+  "total_days": 100,
+  "challenges": [
+    {
+      "day": 1,
+      "title": "Server Resource Validation",
+      "file": "docs/100-days-of-code/challenges/day-001.md",
+      "difficulty": "beginner",
+      "topics": [
+        "dictionaries",
+        "type-conversion",
+        "conditionals",
+        "exception-handling"
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Server Inventory Processing",
+      "file": "docs/100-days-of-code/challenges/day-002.md",
+      "difficulty": "beginner",
+      "topics": [
+        "lists",
+        "loops",
+        "dictionaries",
+        "filtering"
+      ]
+    },
+    {
+      "day": 3,
+      "title": "API Response Validation",
+      "file": "docs/100-days-of-code/challenges/day-003.md",
+      "difficulty": "beginner",
+      "topics": [
+        "json",
+        "functions",
+        "exception-handling",
+        "validation"
+      ]
+    }
+  ]
+}
