@@ -1,0 +1,1105 @@
+{
+  "version": 1,
+  "total_days": 100,
+  "start_date": "2026-11-15",
+  "timezone": "UTC",
+  "challenges": [
+    {
+      "day": 1,
+      "title": "Server Resource Validation",
+      "file": "docs/100-days-of-code/challenges/day-001.md",
+      "difficulty": "beginner",
+      "topics": [
+        "dictionaries",
+        "type conversion",
+        "conditionals",
+        "exception handling"
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Server Inventory Processing",
+      "file": "docs/100-days-of-code/challenges/day-002.md",
+      "difficulty": "beginner",
+      "topics": [
+        "lists",
+        "loops",
+        "dictionaries",
+        "filtering"
+      ]
+    },
+    {
+      "day": 3,
+      "title": "API Response Validation",
+      "file": "docs/100-days-of-code/challenges/day-003.md",
+      "difficulty": "beginner",
+      "topics": [
+        "json",
+        "functions",
+        "exception handling",
+        "validation"
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Log File Error Analyzer",
+      "file": "docs/100-days-of-code/challenges/day-004.md",
+      "difficulty": "beginner",
+      "topics": [
+        "file handling",
+        "strings",
+        "counters"
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Disk Usage Alerting",
+      "file": "docs/100-days-of-code/challenges/day-005.md",
+      "difficulty": "beginner",
+      "topics": [
+        "lists",
+        "dictionaries",
+        "comparisons"
+      ]
+    },
+    {
+      "day": 6,
+      "title": "Configuration File Validator",
+      "file": "docs/100-days-of-code/challenges/day-006.md",
+      "difficulty": "beginner",
+      "topics": [
+        "json",
+        "defaults",
+        "validation"
+      ]
+    },
+    {
+      "day": 7,
+      "title": "CSV Server Inventory Report",
+      "file": "docs/100-days-of-code/challenges/day-007.md",
+      "difficulty": "beginner",
+      "topics": [
+        "csv",
+        "files",
+        "aggregation"
+      ]
+    },
+    {
+      "day": 8,
+      "title": "Backup Age Checker",
+      "file": "docs/100-days-of-code/challenges/day-008.md",
+      "difficulty": "beginner",
+      "topics": [
+        "datetime",
+        "parsing",
+        "conditionals"
+      ]
+    },
+    {
+      "day": 9,
+      "title": "Port Availability Planner",
+      "file": "docs/100-days-of-code/challenges/day-009.md",
+      "difficulty": "beginner",
+      "topics": [
+        "sets",
+        "loops",
+        "validation"
+      ]
+    },
+    {
+      "day": 10,
+      "title": "Environment Variable Checker",
+      "file": "docs/100-days-of-code/challenges/day-010.md",
+      "difficulty": "beginner",
+      "topics": [
+        "os",
+        "environment",
+        "exceptions"
+      ]
+    },
+    {
+      "day": 11,
+      "title": "JSON Inventory Transformer",
+      "file": "docs/100-days-of-code/challenges/day-011.md",
+      "difficulty": "beginner",
+      "topics": [
+        "json",
+        "comprehensions",
+        "functions"
+      ]
+    },
+    {
+      "day": 12,
+      "title": "Service Health Summary",
+      "file": "docs/100-days-of-code/challenges/day-012.md",
+      "difficulty": "beginner",
+      "topics": [
+        "lists",
+        "dictionaries",
+        "aggregation"
+      ]
+    },
+    {
+      "day": 13,
+      "title": "Deployment Readiness Check",
+      "file": "docs/100-days-of-code/challenges/day-013.md",
+      "difficulty": "beginner",
+      "topics": [
+        "functions",
+        "boolean logic",
+        "validation"
+      ]
+    },
+    {
+      "day": 14,
+      "title": "Cloud Tag Compliance",
+      "file": "docs/100-days-of-code/challenges/day-014.md",
+      "difficulty": "beginner",
+      "topics": [
+        "nested dictionaries",
+        "sets",
+        "filtering"
+      ]
+    },
+    {
+      "day": 15,
+      "title": "Certificate Expiry Monitor",
+      "file": "docs/100-days-of-code/challenges/day-015.md",
+      "difficulty": "beginner",
+      "topics": [
+        "datetime",
+        "sorting",
+        "thresholds"
+      ]
+    },
+    {
+      "day": 16,
+      "title": "Network CIDR Inventory",
+      "file": "docs/100-days-of-code/challenges/day-016.md",
+      "difficulty": "beginner",
+      "topics": [
+        "ipaddress",
+        "parsing",
+        "exceptions"
+      ]
+    },
+    {
+      "day": 17,
+      "title": "Process Resource Report",
+      "file": "docs/100-days-of-code/challenges/day-017.md",
+      "difficulty": "beginner",
+      "topics": [
+        "sorting",
+        "aggregation",
+        "formatting"
+      ]
+    },
+    {
+      "day": 18,
+      "title": "Patch Compliance Report",
+      "file": "docs/100-days-of-code/challenges/day-018.md",
+      "difficulty": "beginner",
+      "topics": [
+        "sets",
+        "dictionaries",
+        "comparisons"
+      ]
+    },
+    {
+      "day": 19,
+      "title": "User Access Audit",
+      "file": "docs/100-days-of-code/challenges/day-019.md",
+      "difficulty": "beginner",
+      "topics": [
+        "dates",
+        "filtering",
+        "data modeling"
+      ]
+    },
+    {
+      "day": 20,
+      "title": "Incident Timeline Builder",
+      "file": "docs/100-days-of-code/challenges/day-020.md",
+      "difficulty": "beginner",
+      "topics": [
+        "datetime",
+        "sorting",
+        "formatting"
+      ]
+    },
+    {
+      "day": 21,
+      "title": "Retry with Exponential Backoff",
+      "file": "docs/100-days-of-code/challenges/day-021.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "functions",
+        "loops",
+        "exceptions"
+      ]
+    },
+    {
+      "day": 22,
+      "title": "HTTP Status Classifier",
+      "file": "docs/100-days-of-code/challenges/day-022.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "conditionals",
+        "functions",
+        "mappings"
+      ]
+    },
+    {
+      "day": 23,
+      "title": "API Pagination Simulator",
+      "file": "docs/100-days-of-code/challenges/day-023.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "loops",
+        "lists",
+        "defensive programming"
+      ]
+    },
+    {
+      "day": 24,
+      "title": "Rate Limit Calculator",
+      "file": "docs/100-days-of-code/challenges/day-024.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "math",
+        "functions",
+        "validation"
+      ]
+    },
+    {
+      "day": 25,
+      "title": "Webhook Payload Validator",
+      "file": "docs/100-days-of-code/challenges/day-025.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "json",
+        "schemas",
+        "exceptions"
+      ]
+    },
+    {
+      "day": 26,
+      "title": "Secret Configuration Hygiene",
+      "file": "docs/100-days-of-code/challenges/day-026.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "regex",
+        "strings",
+        "file handling"
+      ]
+    },
+    {
+      "day": 27,
+      "title": "Structured Logging Helper",
+      "file": "docs/100-days-of-code/challenges/day-027.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "logging",
+        "functions",
+        "formatting"
+      ]
+    },
+    {
+      "day": 28,
+      "title": "Log Rotation Planner",
+      "file": "docs/100-days-of-code/challenges/day-028.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "pathlib",
+        "datetime",
+        "thresholds"
+      ]
+    },
+    {
+      "day": 29,
+      "title": "Service Dependency Graph",
+      "file": "docs/100-days-of-code/challenges/day-029.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "sets",
+        "dictionaries",
+        "graph basics"
+      ]
+    },
+    {
+      "day": 30,
+      "title": "Maintenance Window Planner",
+      "file": "docs/100-days-of-code/challenges/day-030.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "datetime",
+        "intervals",
+        "sorting"
+      ]
+    },
+    {
+      "day": 31,
+      "title": "Docker Image Metadata Audit",
+      "file": "docs/100-days-of-code/challenges/day-031.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "strings",
+        "dictionaries",
+        "validation"
+      ]
+    },
+    {
+      "day": 32,
+      "title": "Container Restart Analyzer",
+      "file": "docs/100-days-of-code/challenges/day-032.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "aggregation",
+        "filtering",
+        "sorting"
+      ]
+    },
+    {
+      "day": 33,
+      "title": "Kubernetes Pod Status Report",
+      "file": "docs/100-days-of-code/challenges/day-033.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "nested data",
+        "counters",
+        "functions"
+      ]
+    },
+    {
+      "day": 34,
+      "title": "Kubernetes Resource Requests",
+      "file": "docs/100-days-of-code/challenges/day-034.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "type conversion",
+        "units",
+        "validation"
+      ]
+    },
+    {
+      "day": 35,
+      "title": "Kubernetes Namespace Quota",
+      "file": "docs/100-days-of-code/challenges/day-035.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "aggregation",
+        "arithmetic",
+        "dictionaries"
+      ]
+    },
+    {
+      "day": 36,
+      "title": "Helm Values Validator",
+      "file": "docs/100-days-of-code/challenges/day-036.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "nested dictionaries",
+        "validation"
+      ]
+    },
+    {
+      "day": 37,
+      "title": "Terraform Plan Summary",
+      "file": "docs/100-days-of-code/challenges/day-037.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "json",
+        "counters",
+        "reporting"
+      ]
+    },
+    {
+      "day": 38,
+      "title": "Terraform Variable Validator",
+      "file": "docs/100-days-of-code/challenges/day-038.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "functions",
+        "sets",
+        "exceptions"
+      ]
+    },
+    {
+      "day": 39,
+      "title": "Infrastructure Drift Report",
+      "file": "docs/100-days-of-code/challenges/day-039.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "sets",
+        "dictionaries",
+        "diffing"
+      ]
+    },
+    {
+      "day": 40,
+      "title": "Cloud Cost Aggregator",
+      "file": "docs/100-days-of-code/challenges/day-040.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "csv",
+        "aggregation",
+        "reporting"
+      ]
+    },
+    {
+      "day": 41,
+      "title": "Budget Threshold Alert",
+      "file": "docs/100-days-of-code/challenges/day-041.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "percentages",
+        "conditionals",
+        "functions"
+      ]
+    },
+    {
+      "day": 42,
+      "title": "Object Storage Lifecycle Audit",
+      "file": "docs/100-days-of-code/challenges/day-042.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "datetime",
+        "filtering",
+        "policy rules"
+      ]
+    },
+    {
+      "day": 43,
+      "title": "Snapshot Retention Planner",
+      "file": "docs/100-days-of-code/challenges/day-043.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "sorting",
+        "slicing",
+        "dates"
+      ]
+    },
+    {
+      "day": 44,
+      "title": "IAM Policy Structure Check",
+      "file": "docs/100-days-of-code/challenges/day-044.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "nested data",
+        "boolean logic"
+      ]
+    },
+    {
+      "day": 45,
+      "title": "Security Group Rule Audit",
+      "file": "docs/100-days-of-code/challenges/day-045.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "ipaddress",
+        "filtering",
+        "security basics"
+      ]
+    },
+    {
+      "day": 46,
+      "title": "DNS Record Validator",
+      "file": "docs/100-days-of-code/challenges/day-046.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "regex",
+        "strings",
+        "validation"
+      ]
+    },
+    {
+      "day": 47,
+      "title": "TLS Configuration Checker",
+      "file": "docs/100-days-of-code/challenges/day-047.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "sets",
+        "comparisons",
+        "reporting"
+      ]
+    },
+    {
+      "day": 48,
+      "title": "Load Balancer Backend Health",
+      "file": "docs/100-days-of-code/challenges/day-048.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "aggregation",
+        "percentages"
+      ]
+    },
+    {
+      "day": 49,
+      "title": "Autoscaling Recommendation",
+      "file": "docs/100-days-of-code/challenges/day-049.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "statistics",
+        "thresholds",
+        "functions"
+      ]
+    },
+    {
+      "day": 50,
+      "title": "Disaster Recovery Readiness",
+      "file": "docs/100-days-of-code/challenges/day-050.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "datetime",
+        "calculations",
+        "validation"
+      ]
+    },
+    {
+      "day": 51,
+      "title": "Python CLI Argument Parser",
+      "file": "docs/100-days-of-code/challenges/day-051.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "argparse",
+        "functions",
+        "modules"
+      ]
+    },
+    {
+      "day": 52,
+      "title": "Reusable Python Package",
+      "file": "docs/100-days-of-code/challenges/day-052.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "modules",
+        "packages",
+        "imports"
+      ]
+    },
+    {
+      "day": 53,
+      "title": "Typed Data Models",
+      "file": "docs/100-days-of-code/challenges/day-053.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "dataclasses",
+        "typing",
+        "validation"
+      ]
+    },
+    {
+      "day": 54,
+      "title": "Custom Exception Design",
+      "file": "docs/100-days-of-code/challenges/day-054.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "exceptions",
+        "classes",
+        "testing"
+      ]
+    },
+    {
+      "day": 55,
+      "title": "Object-Oriented Server Model",
+      "file": "docs/100-days-of-code/challenges/day-055.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "classes",
+        "properties",
+        "methods"
+      ]
+    },
+    {
+      "day": 56,
+      "title": "Unit Testing with Pytest",
+      "file": "docs/100-days-of-code/challenges/day-056.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "pytest",
+        "fixtures",
+        "parametrization"
+      ]
+    },
+    {
+      "day": 57,
+      "title": "Mocking External Dependencies",
+      "file": "docs/100-days-of-code/challenges/day-057.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "unittest.mock",
+        "pytest",
+        "isolation"
+      ]
+    },
+    {
+      "day": 58,
+      "title": "Test Coverage and Edge Cases",
+      "file": "docs/100-days-of-code/challenges/day-058.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "pytest",
+        "edge cases",
+        "coverage concepts"
+      ]
+    },
+    {
+      "day": 59,
+      "title": "Python Type Checking",
+      "file": "docs/100-days-of-code/challenges/day-059.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "typing",
+        "protocols",
+        "static analysis"
+      ]
+    },
+    {
+      "day": 60,
+      "title": "Performance Profiling",
+      "file": "docs/100-days-of-code/challenges/day-060.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "timeit",
+        "profiling",
+        "algorithmic thinking"
+      ]
+    },
+    {
+      "day": 61,
+      "title": "Concurrent Health Checks",
+      "file": "docs/100-days-of-code/challenges/day-061.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "concurrent.futures",
+        "threading"
+      ]
+    },
+    {
+      "day": 62,
+      "title": "Async API Polling",
+      "file": "docs/100-days-of-code/challenges/day-062.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "asyncio",
+        "coroutines",
+        "timeouts"
+      ]
+    },
+    {
+      "day": 63,
+      "title": "Subprocess Automation",
+      "file": "docs/100-days-of-code/challenges/day-063.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "subprocess",
+        "errors",
+        "security"
+      ]
+    },
+    {
+      "day": 64,
+      "title": "Filesystem Cleanup Planner",
+      "file": "docs/100-days-of-code/challenges/day-064.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "pathlib",
+        "datetime",
+        "dry-run design"
+      ]
+    },
+    {
+      "day": 65,
+      "title": "Archive Log Files",
+      "file": "docs/100-days-of-code/challenges/day-065.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "tarfile",
+        "pathlib",
+        "file handling"
+      ]
+    },
+    {
+      "day": 66,
+      "title": "YAML Configuration Loader",
+      "file": "docs/100-days-of-code/challenges/day-066.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "yaml",
+        "dependencies",
+        "validation"
+      ]
+    },
+    {
+      "day": 67,
+      "title": "SQLite Inventory Store",
+      "file": "docs/100-days-of-code/challenges/day-067.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "sqlite3",
+        "SQL",
+        "CRUD"
+      ]
+    },
+    {
+      "day": 68,
+      "title": "Inventory Data Migration",
+      "file": "docs/100-days-of-code/challenges/day-068.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "data transformation",
+        "versioning"
+      ]
+    },
+    {
+      "day": 69,
+      "title": "REST API Client",
+      "file": "docs/100-days-of-code/challenges/day-069.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "urllib",
+        "JSON",
+        "HTTP"
+      ]
+    },
+    {
+      "day": 70,
+      "title": "API Client Error Handling",
+      "file": "docs/100-days-of-code/challenges/day-070.md",
+      "difficulty": "intermediate",
+      "topics": [
+        "urllib",
+        "exceptions",
+        "retries"
+      ]
+    },
+    {
+      "day": 71,
+      "title": "Git Repository Report",
+      "file": "docs/100-days-of-code/challenges/day-071.md",
+      "difficulty": "advanced",
+      "topics": [
+        "subprocess",
+        "parsing",
+        "reporting"
+      ]
+    },
+    {
+      "day": 72,
+      "title": "GitHub Actions Context Parser",
+      "file": "docs/100-days-of-code/challenges/day-072.md",
+      "difficulty": "advanced",
+      "topics": [
+        "environment",
+        "JSON",
+        "typing"
+      ]
+    },
+    {
+      "day": 73,
+      "title": "CI Test Result Summary",
+      "file": "docs/100-days-of-code/challenges/day-073.md",
+      "difficulty": "advanced",
+      "topics": [
+        "JSON",
+        "reporting",
+        "aggregation"
+      ]
+    },
+    {
+      "day": 74,
+      "title": "Release Notes Generator",
+      "file": "docs/100-days-of-code/challenges/day-074.md",
+      "difficulty": "advanced",
+      "topics": [
+        "sorting",
+        "templates",
+        "strings"
+      ]
+    },
+    {
+      "day": 75,
+      "title": "Deployment Manifest Validator",
+      "file": "docs/100-days-of-code/challenges/day-075.md",
+      "difficulty": "advanced",
+      "topics": [
+        "JSON",
+        "YAML",
+        "validation"
+      ]
+    },
+    {
+      "day": 76,
+      "title": "Blue-Green Deployment Planner",
+      "file": "docs/100-days-of-code/challenges/day-076.md",
+      "difficulty": "advanced",
+      "topics": [
+        "state",
+        "classes",
+        "decision logic"
+      ]
+    },
+    {
+      "day": 77,
+      "title": "Canary Release Analyzer",
+      "file": "docs/100-days-of-code/challenges/day-077.md",
+      "difficulty": "advanced",
+      "topics": [
+        "statistics",
+        "thresholds",
+        "reporting"
+      ]
+    },
+    {
+      "day": 78,
+      "title": "Rollback Decision Engine",
+      "file": "docs/100-days-of-code/challenges/day-078.md",
+      "difficulty": "advanced",
+      "topics": [
+        "functions",
+        "boolean logic",
+        "testing"
+      ]
+    },
+    {
+      "day": 79,
+      "title": "SLA Availability Calculator",
+      "file": "docs/100-days-of-code/challenges/day-079.md",
+      "difficulty": "advanced",
+      "topics": [
+        "datetime",
+        "percentages",
+        "calculations"
+      ]
+    },
+    {
+      "day": 80,
+      "title": "SLO Error Budget Tracker",
+      "file": "docs/100-days-of-code/challenges/day-080.md",
+      "difficulty": "advanced",
+      "topics": [
+        "math",
+        "reporting",
+        "validation"
+      ]
+    },
+    {
+      "day": 81,
+      "title": "Incident Metrics Dashboard Data",
+      "file": "docs/100-days-of-code/challenges/day-081.md",
+      "difficulty": "advanced",
+      "topics": [
+        "datetime",
+        "aggregation",
+        "CSV"
+      ]
+    },
+    {
+      "day": 82,
+      "title": "Change Failure Rate Report",
+      "file": "docs/100-days-of-code/challenges/day-082.md",
+      "difficulty": "advanced",
+      "topics": [
+        "metrics",
+        "aggregation",
+        "percentages"
+      ]
+    },
+    {
+      "day": 83,
+      "title": "Runbook Command Validator",
+      "file": "docs/100-days-of-code/challenges/day-083.md",
+      "difficulty": "advanced",
+      "topics": [
+        "sets",
+        "security",
+        "validation"
+      ]
+    },
+    {
+      "day": 84,
+      "title": "Operational Readiness Checklist",
+      "file": "docs/100-days-of-code/challenges/day-084.md",
+      "difficulty": "advanced",
+      "topics": [
+        "data modeling",
+        "validation"
+      ]
+    },
+    {
+      "day": 85,
+      "title": "Python Automation Test Harness",
+      "file": "docs/100-days-of-code/challenges/day-085.md",
+      "difficulty": "advanced",
+      "topics": [
+        "pytest",
+        "fixtures",
+        "subprocess"
+      ]
+    },
+    {
+      "day": 86,
+      "title": "Workflow YAML Linter",
+      "file": "docs/100-days-of-code/challenges/day-086.md",
+      "difficulty": "advanced",
+      "topics": [
+        "YAML",
+        "pathlib",
+        "structural checks"
+      ]
+    },
+    {
+      "day": 87,
+      "title": "Least Privilege Workflow Audit",
+      "file": "docs/100-days-of-code/challenges/day-087.md",
+      "difficulty": "advanced",
+      "topics": [
+        "YAML",
+        "security",
+        "policy"
+      ]
+    },
+    {
+      "day": 88,
+      "title": "Dependency Update Report",
+      "file": "docs/100-days-of-code/challenges/day-088.md",
+      "difficulty": "advanced",
+      "topics": [
+        "packaging concepts",
+        "parsing",
+        "reporting"
+      ]
+    },
+    {
+      "day": 89,
+      "title": "Software Bill of Materials Summary",
+      "file": "docs/100-days-of-code/challenges/day-089.md",
+      "difficulty": "advanced",
+      "topics": [
+        "CSV",
+        "dictionaries",
+        "reporting"
+      ]
+    },
+    {
+      "day": 90,
+      "title": "Container Build Context Audit",
+      "file": "docs/100-days-of-code/challenges/day-090.md",
+      "difficulty": "advanced",
+      "topics": [
+        "pathlib",
+        "patterns",
+        "security"
+      ]
+    },
+    {
+      "day": 91,
+      "title": "Cloud Resource Naming Policy",
+      "file": "docs/100-days-of-code/challenges/day-091.md",
+      "difficulty": "advanced",
+      "topics": [
+        "regex",
+        "functions",
+        "testing"
+      ]
+    },
+    {
+      "day": 92,
+      "title": "Multi-Environment Config Comparison",
+      "file": "docs/100-days-of-code/challenges/day-092.md",
+      "difficulty": "advanced",
+      "topics": [
+        "nested dictionaries",
+        "diffing"
+      ]
+    },
+    {
+      "day": 93,
+      "title": "Infrastructure Cost Forecast",
+      "file": "docs/100-days-of-code/challenges/day-093.md",
+      "difficulty": "advanced",
+      "topics": [
+        "statistics",
+        "dates",
+        "calculations"
+      ]
+    },
+    {
+      "day": 94,
+      "title": "Automated Backup Verification",
+      "file": "docs/100-days-of-code/challenges/day-094.md",
+      "difficulty": "advanced",
+      "topics": [
+        "hashlib",
+        "pathlib",
+        "exceptions"
+      ]
+    },
+    {
+      "day": 95,
+      "title": "Recovery Drill Report",
+      "file": "docs/100-days-of-code/challenges/day-095.md",
+      "difficulty": "advanced",
+      "topics": [
+        "datetime",
+        "reporting",
+        "validation"
+      ]
+    },
+    {
+      "day": 96,
+      "title": "Capstone: Infrastructure Audit CLI",
+      "file": "docs/100-days-of-code/challenges/day-096.md",
+      "difficulty": "advanced",
+      "topics": [
+        "architecture",
+        "argparse",
+        "testing"
+      ]
+    },
+    {
+      "day": 97,
+      "title": "Capstone: CI Quality Gate",
+      "file": "docs/100-days-of-code/challenges/day-097.md",
+      "difficulty": "advanced",
+      "topics": [
+        "pytest",
+        "subprocess",
+        "CI"
+      ]
+    },
+    {
+      "day": 98,
+      "title": "Capstone: Deployment Readiness Tool",
+      "file": "docs/100-days-of-code/challenges/day-098.md",
+      "difficulty": "advanced",
+      "topics": [
+        "modules",
+        "classes",
+        "integration"
+      ]
+    },
+    {
+      "day": 99,
+      "title": "Capstone: Cloud Operations Toolkit",
+      "file": "docs/100-days-of-code/challenges/day-099.md",
+      "difficulty": "advanced",
+      "topics": [
+        "packaging",
+        "CLI",
+        "testing"
+      ]
+    },
+    {
+      "day": 100,
+      "title": "Capstone: 100 Days Review",
+      "file": "docs/100-days-of-code/challenges/day-100.md",
+      "difficulty": "advanced",
+      "topics": [
+        "Git",
+        "JSON",
+        "reporting",
+        "reflection"
+      ]
+    }
+  ]
+}
