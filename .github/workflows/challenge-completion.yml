@@ -1,0 +1,32 @@
+name: 100 Days of Code - Challenge Completion
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  complete:
+    if: >-
+      github.event.issue.pull_request == null &&
+      github.event.comment.body == '/complete'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/100-days-of-code
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Complete challenge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+          COMMENT_USER: ${{ github.event.comment.user.login }}
+        run: python .github/scripts/100_days_of_code/completion_manager.py

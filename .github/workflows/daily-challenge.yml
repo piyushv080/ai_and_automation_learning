@@ -1,0 +1,37 @@
+name: Daily 100 Days of Code Challenge
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+    inputs:
+      force_test:
+        description: "Create a clearly labeled test issue for Day 001"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/100-days-of-code
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Create next eligible challenge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          if [ "${{ inputs.force_test }}" = "true" ]; then
+            python .github/scripts/100_days_of_code/challenge_dispatcher.py --force-test
+          else
+            python .github/scripts/100_days_of_code/challenge_dispatcher.py
+          fi
